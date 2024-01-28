@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Weave>
+  <Modules>Weave,HTMLBuilder</Modules>
+  <Threads>
+    <Thread>
+      <Title>Scheduled Tasks</Title>
+      <Category>Weave</Category>
+      <Path>$threadspath\Get-ScheduledTaskModel.ps1</Path>
+      <Run>true</Run>
+      <Method>command</Method>
+      <Arguments>-computername $computername</Arguments>
+      <Properties>*</Properties>
+      <List>Table</List>
+      <Type>all</Type>
+      <OS>all</OS>
+      <Process>report</Process>
+    </Thread>
+    <Thread>
+      <Title>Profile ACL Owner</Title>
+      <Category>Weave</Category>
+      <Path>$threadspath\Test-FileServerACLModel.ps1</Path>
+      <Run>true</Run>
+      <Method>command</Method>
+      <Arguments>-computername $ProfileServer -type owner</Arguments>
+      <Properties>*</Properties>
+      <List>Table</List>
+      <Type>all</Type>
+      <OS>all</OS>
+      <Process>report</Process>
+    </Thread>
+    <Thread>
+      <Title>Profile Share Stats</Title>
+      <Category>Windows</Category>
+      <Path>$threadsPath\Test-FileServerShareStatsModel.ps1</Path>
+      <Run>true</Run>
+      <Method>command</Method>
+      <Arguments>-computername $computername</Arguments>
+      <Properties>*</Properties>
+      <List>Table</List>
+      <Type>all</Type>
+      <OS>all</OS>
+      <Process>report</Process>
+    </Thread>
+    <Thread>
+      <Title>Server Info</Title>
+      <Category>Windows</Category>
+      <Path>$threadsPath\Get-ServerStats.ps1</Path>
+      <Run>true</Run>
+      <Method>command</Method>
+      <Arguments>-computername $computername</Arguments>
+      <Properties>*</Properties>
+      <List>Table</List>
+      <Type>all</Type>
+      <OS>all</OS>
+      <Process>report</Process>
+    </Thread>
+  </Threads>
+</Weave>

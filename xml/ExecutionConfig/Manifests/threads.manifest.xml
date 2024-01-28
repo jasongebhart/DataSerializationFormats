@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Weave>
+  <Modules>Weave,HTMLBuilder</Modules>
+  <Threads name="test">
+    <Thread>
+      <Title>Device Profile</Title>
+      <Category>Weave</Category>
+      <DescriptionPath></DescriptionPath>
+      <Path>New-ObjectFromXML -XML "$path\..\ExecutionConfig\Nodes\device.profiles.xml" -XPathQuery '//MainDevices/Device'</Path>
+      <Run>true</Run>
+      <Method>framework</Method>
+      <Arguments>-computername $computername</Arguments>
+      <Properties>*</Properties>
+      <List>List</List>
+      <Type>all</Type>
+      <OS>all</OS>
+      <Process>update, test</Process>
+    </Thread>
+    <Thread>
+      <Title>Windows Version</Title>
+      <Category>Windows</Category>
+      <Path>$threadsPath\WinOS\Get-WindowsVersionthread.ps1</Path>
+      <Run>true</Run>
+      <Method>command</Method>
+      <Arguments>-computername $computername</Arguments>
+      <Properties>*</Properties>
+      <List>List</List>
+      <Type>all</Type>
+      <OS>all</OS>
+      <Process>update, test</Process>
+    </Thread>
+    <Thread>
+      <Title>Putty</Title>
+      <Category>Windows</Category>
+      <Path>$appsource\putty\installer.ps1</Path>
+      <Run>true</Run>
+      <Method>command</Method>
+      <Arguments>-computername $computername</Arguments>
+      <Properties>*</Properties>
+      <List>List</List>
+      <Type>all</Type>
+      <OS>all</OS>
+      <Process>update, test</Process>
+    </Thread>
+  </Threads>
+</Weave>

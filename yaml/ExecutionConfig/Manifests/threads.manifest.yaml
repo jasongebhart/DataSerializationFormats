@@ -1,0 +1,57 @@
+Weave:
+  modules: Weave,HTMLBuilder
+  
+  threads:
+    name: Personal
+    
+    thread:
+      - title: Device Profile  
+        subtitle: ""
+        category: Weave
+        description: ""
+        descriptionpath: 
+        source: ""
+        path: Test-IsDeviceProfile -ComputerName $ComputerName -DeviceProfile $DeviceProfiles
+        Run: true
+        method: framework
+        arguments: "" 
+        PassparentSettings: ""
+        Properties: "*"
+        list: List
+        type: all
+        OS: all
+        process: update, test
+        
+      - title: Windows Version 
+        subtitle: ""
+        category: Windows
+        description: ""
+        descriptionpath: ""
+        source: ""
+        path: $threadsPath\\WinOS\\Get-WindowsVersionthread.ps1
+        Run: true
+        method: command
+        arguments: ""
+        PassparentSettings: ""
+        Properties: "*"
+        list: List
+        type: all 
+        OS: all
+        process: update, test
+        
+      - title: Windows Version
+        subtitle: ""
+        category: Windows
+        description: ""
+        descriptionpath: "" 
+        source: ""
+        path: $appsource\\putty\\installer.ps1
+        Run: true
+        method: command
+        arguments: " "
+        PassparentSettings: ""
+        Properties: "*"
+        list: List
+        type: all
+        OS: all
+        process: update, test

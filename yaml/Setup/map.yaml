@@ -1,0 +1,12 @@
+AppSource: \\deploy.vivika.com\AppSource
+BuildkitPath: \\deploy.vivika.com\weave\buildkit
+CSS: \\deploy.vivika.com\weave\buildkit\infrastructure\html\style.css
+WeaveExtension: \\deploy.vivika.com\weave\buildkit\config\WeaveExtension.yaml
+Weave: \\deploy.vivika.com\weave
+ScriptPath: \\deploy.vivika.com\weave\buildkit\infrastructure
+ReportPath: \\deploy.vivika.com\reports\buildkit\infrastructure
+Modules: Weave,WeaveHTML,WeaveRegistry,WeaveRemote
+ModulesPath: \\deploy.vivika.com\weave\modules
+ModelsPath: \\deploy.vivika.com\weave\models
+ModelsManifest: \\deploy.vivika.com\weave\buildkit\infrastructure\config\Models_Manifest.yaml
+WeaveEnvironment: \\deploy.vivika.com\weave\config\environment.yaml

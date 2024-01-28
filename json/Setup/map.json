@@ -1,0 +1,14 @@
+{
+  "AppSource": "\\\\deploy.vivika.com\\AppSource",
+  "BuildkitPath": "\\\\deploy.vivika.com\\weave\\buildkit",
+  "CSS": "\\\\deploy.vivika.com\\weave\\buildkit\\infrastructure\\html\\style.css",
+  "WeaveExtension": "\\\\deploy.vivika.com\\weave\\buildkit\\config\\WeaveExtension.json",
+  "Weave": "\\\\deploy.vivika.com\\weave",
+  "ScriptPath": "\\\\deploy.vivika.com\\weave\\buildkit\\infrastructure",
+  "ReportPath": "\\\\deploy.vivika.com\\reports\\buildkit\\infrastructure",
+  "Modules": "Weave,WeaveHTML,WeaveRegistry,WeaveRemote",
+  "ModulesPath": "\\\\deploy.vivika.com\\weave\\modules",
+  "ThreadsPath": "\\\\deploy.vivika.com\\weave\\threads",
+  "ThreadsManifest": "\\\\deploy.vivika.com\\weave\\buildkit\\infrastructure\\config\\threads_Manifest.json",
+  "WeaveEnvironment": "\\\\deploy.vivika.com\\weave\\config\\environment.json"
+}

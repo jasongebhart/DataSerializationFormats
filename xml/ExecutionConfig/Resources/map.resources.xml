@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Resources>
+  <ResourcesList>
+    <Resource>
+      <Name>Windows Test</Name>
+      <Id></Id>
+      <Path>$weave\\config\Win11_Test.json</Path>
+    </Resource>
+    <Resource>
+      <Name>Windows 10 Standard</Name>
+      <Id></Id>
+      <Path>$weave\\buildkit\\config\\Win11_Standard.json</Path>
+    </Resource>
+    <Resource>
+      <Name>Windows Personal</Name>
+      <Id></Id>
+      <Path>$weave\\buildkit\\config\\Win11_Personal.json</Path>
+    </Resource>
+  </ResourcesList>
+</Resources>

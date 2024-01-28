@@ -1,0 +1,18 @@
+[naming_convention]
+  [[naming_convention.conventions]]
+    name = "apps"
+    description = "Windows Server 2022"
+    os = "Win2022"
+    type = "standard"
+
+  [[naming_convention.conventions]]
+    name = "ws11"
+    description = "Windows 11 Standard"
+    os = "Win11"
+    type = "standard"
+
+  [[naming_convention.conventions]]
+    name = "wp11"
+    description = "Windows 11 Personal"
+    os = "Win11"
+    type = "personal"

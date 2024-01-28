@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MainDevices>
+  <Device name="w2022-main" description="Windows Server 2022" os="Win2022" type="standard" />
+  <Device name="ws11-main" description="Windows 11 Standard" os="Win11" type="standard" />
+  <Device name="wp11-main" description="Windows 11 Personal" os="Win11" type="personal" />
+</MainDevices>

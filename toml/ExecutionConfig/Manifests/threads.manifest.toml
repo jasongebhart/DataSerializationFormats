@@ -1,0 +1,41 @@
+[Weave]
+  modules = "Weave,HTMLBuilder"
+
+  [Weave.threads]
+    [[Weave.threads.thread]]
+      title = "Scheduled Tasks"
+      category = "Weave"
+      descriptionpath = "$BuildKitPath\\config\\parentDevices_Description.xml"
+      path = "Get-parentSettings -computer $computer -xml $BuildKitPath\\config\\parentDevices.xml"
+      Run = true
+      method = "framework"
+      Properties = "*"
+      list = "List"
+      type = "all"
+      OS = "all"
+      process = "update, test"
+
+    [[Weave.threads.thread]]
+      title = "Weave Framework Settings"
+      category = "Weave"
+      description = "This section lists the settings defined within the XML"
+      path = "Get-WeaveConfigFromXML $WeaveConfigXML"
+      Run = true
+      method = "framework"
+      Properties = "*"
+      list = "List"
+      type = "all"
+      OS = "all"
+      process = "update, test"
+
+    [[Weave.threads.thread]]
+      title = "Windows Version"
+      category = "Windows"
+      path = "$threadsPath\\WinOS\\Get-WindowsVersionthread.ps1"
+      Run = true
+      method = "command"
+      Properties = "*"
+      list = "List"
+      type = "all"
+      OS = "all"
+      process = "update, test"

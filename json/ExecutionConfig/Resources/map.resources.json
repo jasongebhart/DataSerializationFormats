@@ -1,0 +1,21 @@
+{
+    "Resources": {
+      "ResourcesList": [
+        {
+          "Name": "Windows Test",
+          "Id": "",
+          "Path": "$weave\\config\\Win11_Test.json"
+        },
+        {
+          "Name": "Windows 10 Standard",
+          "Id": "",
+          "Path": "$weave\\buildkit\\config\\Win11_Standard.json"
+        },
+        {
+          "Name": "Windows Personal",
+          "Id": "",
+          "Path": "$weave\\buildkit\\config\\Win11_Personal.json"
+        }
+    ]  
+  }
+} 

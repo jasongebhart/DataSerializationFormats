@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Nodes>
+  <Node name="ws10-001" operatingSystem="Windows 10" memory="16GB" storage="500GB SSD" status="Active" />
+  <Node name="ws11-001" operatingSystem="Windows 11" memory="8GB" storage="256GB SSD" status="Inactive" />
+</Nodes>

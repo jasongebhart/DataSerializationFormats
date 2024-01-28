@@ -1,0 +1,15 @@
+[Resources]
+  [[Resources.Definitions]]
+    Name = "Windows Test"
+    Id = ""
+    Definition = "$weave\\config\\Win11_Test.json"
+
+  [[Resources.Definitions]]
+    Name = "Windows 10 Standard"
+    Id = ""
+    Definition = "$weave\\buildkit\\config\\Win11_Standard.json"
+
+  [[Resources.Definitions]]
+    Name = "Windows Personal"
+    Id = ""
+    Definition = "$weave\\buildkit\\config\\Win11_Personal.json"

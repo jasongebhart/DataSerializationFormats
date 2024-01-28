@@ -1,0 +1,11 @@
+Resources:
+  ResourcesList:
+    - Name: Windows Test
+      Id: ""
+      Path: $weave\\config\Win11_Test.yaml
+    - Name: Windows 10 Standard
+      Id: "" 
+      Path: $weave\\buildkit\\config\\Win11_Standard.yaml
+    - Name: Windows Personal
+      Id: ""
+      Path: $weave\\buildkit\\config\\Win11_Personal.yaml

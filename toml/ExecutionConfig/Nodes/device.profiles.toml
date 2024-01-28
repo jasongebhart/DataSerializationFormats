@@ -1,0 +1,18 @@
+[main_devices]
+  [[main_devices.devices]]
+    name = "w2022-main"
+    description = "Windows Server 2022"
+    os = "Win2022"
+    type = "standard"
+
+  [[main_devices.devices]]
+    name = "ws11-main"
+    description = "Windows 11 Standard"
+    os = "Win11"
+    type = "standard"
+
+  [[main_devices.devices]]
+    name = "wp11-main"
+    description = "Windows 11 Personal"
+    os = "Win11"
+    type = "personal"

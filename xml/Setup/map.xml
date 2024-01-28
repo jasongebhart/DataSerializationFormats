@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Framework>
+    <Configuration>
+        <AppSource>\\deploy.vivika.com\AppSource</AppSource>
+        <BuildkitPath>\\deploy.vivika.com\weave\buildkit</BuildkitPath>
+        <CSS>\\deploy.vivika.com\weave\buildkit\infrastructure\html\style.css</CSS>
+        <WeaveExtension>\\deploy.vivika.com\weave\buildkit\config\WeaveExtension.xml</WeaveExtension>
+        <Weave>\\deploy.vivika.com\weave</Weave>
+        <ScriptPath>\\deploy.vivika.com\weave\buildkit\infrastructure</ScriptPath>
+        <ReportPath>\\deploy.vivika.com\reports\buildkit\infrastructure</ReportPath>
+        <Modules>Weave,WeaveHTML,WeaveRegistry,WeaveRemote</Modules>
+        <ModulesPath>\\deploy.vivika.com\weave\modules</ModulesPath>
+        <ThreadsPath>\\deploy.vivika.com\weave\threads</ThreadsPath>
+        <ThreadsManifest>\\deploy.vivika.com\weave\buildkit\infrastructure\config\threads_Manifest.xml</ThreadsManifest>
+        <WeaveEnvironment>\\deploy.vivika.com\weave\config\environment.xml</WeaveEnvironment>
+    </Configuration>
+</Framework>
